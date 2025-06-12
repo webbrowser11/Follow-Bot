@@ -1,7 +1,14 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
     "api/follow.py": {
       "runtime": "@vercel/python"
     }
-  }
+  },
+  "crons": [
+    {
+      "path": "/api/follow",
+      "schedule": "*/5 * * * *"
+    }
+  ]
 }
