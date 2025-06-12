@@ -4,11 +4,5 @@
     "api/follow.py": {
       "runtime": "@vercel/python"
     }
-  },
-  "crons": [
-    {
-      "path": "/api/follow",
-      "schedule": "*/5 * * * *"
-    }
-  ]
+  }
 }
