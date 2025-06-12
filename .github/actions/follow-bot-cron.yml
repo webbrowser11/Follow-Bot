@@ -1,0 +1,13 @@
+name: Trigger Scratch Follow Bot every 5 minutes
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # every 5 minutes
+
+jobs:
+  call-vercel-function:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel API
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" https://yourproject.vercel.app/api/follow
