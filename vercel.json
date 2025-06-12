@@ -3,11 +3,5 @@
     "api/follow.py": {
       "runtime": "python3.9"
     }
-  },
-  "cron": [
-    {
-      "path": "/api/follow",
-      "schedule": "*/5 * * * *"
-    }
-  ]
+  }
 }
