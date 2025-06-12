@@ -1,0 +1,6 @@
+[
+  {
+    "path": "/api/follow",
+    "schedule": "*/5 * * * *"
+  }
+]
